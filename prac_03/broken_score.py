@@ -22,4 +22,5 @@ def calculate_score(score):
         result = "Passable"
     return result
 
+
 main()

@@ -18,7 +18,7 @@ def calculate_score(score):
         result = "Bad"
     elif score > 90:
         result = "Excellent"
-    elif score > 50:
+    else:
         result = "Passable"
     return result
 

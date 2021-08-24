@@ -17,7 +17,7 @@ def main():
             print("Result: {:.2f} F".format(fahrenheit))
         elif choice == "F":
             fahrenheit = float(input("Fahrenheit: "))
-            celsius = calculate_fahrenheit(celsius, fahrenheit)
+            celsius = calculate_fahrenheit(fahrenheit)
             print("Result: {:.2f} F".format(celsius))
         else:
             print("Invalid option")
@@ -31,7 +31,7 @@ def calculate_celsius(celsius):
     return fahrenheit
 
 
-def calculate_fahrenheit(celsius, fahrenheit):
+def calculate_fahrenheit(fahrenheit):
     celsius = 5 / 9 * (fahrenheit - 32)
     return celsius
 

@@ -7,8 +7,16 @@ FILENAME = "subject_data.txt"
 
 
 def main():
-    data = get_data()
+    data = format_data()
     print(data)
+
+def format_data():
+    input_file = open(FILENAME)
+    for line in input_file:
+        line = line.strip()
+        parts = line.split(',')
+        print("{} is taught by {} and has {} students".format(parts[0], parts[1], parts[2]))
+    input_file.close()
 
 
 def get_data():

@@ -1,16 +1,15 @@
+
+
 class ProgrammingLanguage:
-    def __int__(self):
-        self.field = ""
-        self.typing = ""
-        self.reflection = False
-        self.year = 0
+    def __int__(self, field, typing, reflection, year):
+        self.field = field
+        self.typing = typing
+        self.reflection = reflection
+        self.year = year
 
     def is_dynamic(self):
-        if self.typing == "Dynamic":
-            self.typing = True
-
-        else:
-            self.typing = False
+        return self.typing == "Dynamic"
 
     def __str__(self):
-        print("{}, {} Typing, Reflection={}, First appeared in {}".format())
+        print("{}, {} Typing, Reflection={}, First appeared in {}".format(self.field, self.typing, self.reflection,
+                                                                          self.year))

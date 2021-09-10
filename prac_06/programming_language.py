@@ -1,8 +1,8 @@
 
 
 class ProgrammingLanguage:
-    def __int__(self, field, typing, reflection, year):
-        self.field = field
+    def __init__(self, name, typing, reflection, year):
+        self.name = name
         self.typing = typing
         self.reflection = reflection
         self.year = year
@@ -11,5 +11,5 @@ class ProgrammingLanguage:
         return self.typing == "Dynamic"
 
     def __str__(self):
-        print("{}, {} Typing, Reflection={}, First appeared in {}".format(self.field, self.typing, self.reflection,
-                                                                          self.year))
+        "{}, {} Typing, Reflection={}, First appeared in {}".format(self.name, self.typing, self.reflection,
+                                                                          self.year)
